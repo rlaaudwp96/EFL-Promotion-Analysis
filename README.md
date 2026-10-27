@@ -17,6 +17,7 @@ An end-to-end sports analytics project examining which team-performance metrics 
 - `efl_analysis.py` - Reproducible Python analysis with logistic regression, random forest, and regression.
 - `efl_table_final_clean.csv` - Cleaned team-season analysis table.
 - `requirements.txt` - Python dependencies.
+- `sql/promotion_analysis.sql` - BigQuery SQL for team-season summaries.
 
 ## Python Workflow
 
@@ -29,8 +30,6 @@ python efl_analysis.py
 
 Python, pandas, scikit-learn, BigQuery SQL, and Jupyter.
 
-The original R/Quarto materials are preserved in `legacy_r/` for reference; the primary implementation is Python.
-
 ## Reproducibility
 
-The analysis uses the included cleaned CSV. The original R/Quarto materials are preserved in `legacy_r/` for reference.
+The Python analysis uses the included cleaned CSV. The SQL file is ready to adapt to a BigQuery table by replacing the project and dataset identifier.
