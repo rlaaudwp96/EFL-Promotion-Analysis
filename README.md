@@ -1,6 +1,8 @@
-# EFL Championship Promotion and Points Analysis
+# EFL Championship Promotion Analysis
 
-An end-to-end sports analytics project examining which team-performance metrics are associated with promotion from the English Football League Championship. The workflow combines R, SQL, BigQuery, exploratory data analysis, statistical modeling, and machine learning.
+Python and SQL analysis of the team-performance factors associated with promotion from the English Football League Championship.
+
+An end-to-end sports analytics project examining which team-performance metrics are associated with promotion. The workflow uses pandas, scikit-learn, SQL/BigQuery, exploratory analysis, statistical modeling, and machine learning.
 
 ## Highlights
 
@@ -12,16 +14,23 @@ An end-to-end sports analytics project examining which team-performance metrics 
 
 ## Repository Contents
 
-- `EFL_Final.qmd` - Main Quarto analysis and statistical report.
-- `ML_efl.qmd` - Machine-learning workflow for promotion classification.
+- `efl_analysis.py` - Reproducible Python analysis with logistic regression, random forest, and regression.
 - `efl_table_final_clean.csv` - Cleaned team-season analysis table.
-- `EFL.ipynb` - Notebook version of the project workflow.
-- `EFL_Final.html` / `EFL_Final.pdf` - Rendered report outputs.
+- `requirements.txt` - Python dependencies.
+
+## Python Workflow
+
+```bash
+pip install -r requirements.txt
+python efl_analysis.py
+```
 
 ## Tools
 
-R, tidyverse, tidymodels, ggplot2, broom, BigQuery SQL, DBI, bigrquery, randomForest, Quarto, and Jupyter.
+Python, pandas, scikit-learn, BigQuery SQL, and Jupyter.
+
+The original R/Quarto materials are preserved in `legacy_r/` for reference; the primary implementation is Python.
 
 ## Reproducibility
 
-The main report imports a summary table from BigQuery and also reads the included cleaned CSV for local analysis. To reproduce the cloud-import section, configure a BigQuery project and dataset with the required credentials, then update the project identifiers in `EFL_Final.qmd`.
+The analysis uses the included cleaned CSV. The original R/Quarto materials are preserved in `legacy_r/` for reference.
